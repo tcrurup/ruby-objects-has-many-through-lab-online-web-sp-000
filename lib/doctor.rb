@@ -16,8 +16,7 @@ class Doctor
   end
   
   def patients
-    #iterates through appointments to gather all of the patients belonging to the
-    #doctor
+    self.appointments.collect{ |appointment| appointment.patient }
   end
   
   def name
