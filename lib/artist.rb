@@ -2,13 +2,11 @@ class Artist
   
   @@all = []
   
+  attr_reader :name
+  
   def initialize(artist_name)
     @name = artist_name
     @@all << self
-  end
-  
-  def name 
-    @name
   end
   
   def songs
