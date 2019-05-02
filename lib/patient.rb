@@ -20,7 +20,7 @@ class Patient
   end
   
   def doctors
-    #Iterats over all the patients appointments and collects the doctors from each appointments
+    self.appointments.collect{ |appointment| appointment.doctor }
   end
   
   def self.all
