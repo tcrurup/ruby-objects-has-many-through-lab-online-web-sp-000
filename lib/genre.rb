@@ -11,6 +11,10 @@ class Genre
     @name
   end
   
+  def songs
+    Song.all.collect{ |song| song.genre == self }
+  end
+  
   def self.all 
     @@all
   end
