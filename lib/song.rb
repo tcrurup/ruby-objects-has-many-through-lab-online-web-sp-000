@@ -9,6 +9,10 @@ class Song
     @@all << self
   end
   
+  def genre_name
+    self.genre.name
+  end
+  
   def name 
     @name
   end
