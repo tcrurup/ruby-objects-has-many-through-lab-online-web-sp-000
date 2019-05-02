@@ -8,8 +8,7 @@ class Doctor
   end
   
   def new_appointment(patient, date)
-    #creates a new appointment object with patient and date  
-    #appointment should know it belongs to doctor
+    Appointment.new()
   end
   
   def appointments 
