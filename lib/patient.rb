@@ -16,7 +16,7 @@ class Patient
   end
   
   def appointments
-    #Iterates through all appoingments and returns ones that belong to the patient 
+    Appointment.all.select{ |appointment| appointment.patient == self }
   end
   
   def doctors
