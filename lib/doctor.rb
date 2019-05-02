@@ -13,7 +13,7 @@ class Doctor
   end
   
   def appointments 
-    #iterates through all appointments and returns ones belonging to the doctor
+    Appointment
   end
   
   def patients
