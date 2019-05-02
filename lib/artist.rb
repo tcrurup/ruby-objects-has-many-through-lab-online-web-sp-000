@@ -16,7 +16,7 @@ class Artist
   end
   
   def genres
-    self.songs.collect{ |artists_song| artist_song.genre } 
+    self.songs.collect{ |artist_songs| artist_songs.genre } 
   end
   
   def new_song(song_name, song_genre)
